@@ -1,0 +1,232 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f6f3ea"><link rel="manifest" href="./manifest.webmanifest"><title>Pequeño Mundo · Uno para cada uno · V19</title><style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#23443a;background:#f6f3ea}*{box-sizing:border-box}body{margin:0;overscroll-behavior:none}button{font:inherit;cursor:pointer;touch-action:manipulation}button:focus-visible{outline:4px solid #175d9d;outline-offset:3px}main{max-width:680px;margin:auto;padding:12px 12px 30px;min-height:100dvh}header{display:flex;align-items:center;justify-content:space-between}header h1{font-size:19px}.round{height:52px;min-width:52px;border:2px solid #c6b6a1;background:white;border-radius:17px}.screen{display:none}.screen.active{display:block}.welcome{text-align:center;padding:50px 12px}.welcome h2{font-size:clamp(30px,7vw,44px)}.hero{font-size:65px}.primary{border:0;background:#236f54;color:white;border-radius:17px;min-height:60px;padding:10px 25px;font-size:22px;font-weight:750}.instruction{text-wrap:balance;text-align:center;font-size:clamp(22px,5vw,30px);line-height:1.2;min-height:66px;margin:20px 0 12px}.playground{background:#fffefa;border:2px solid #e5d7c6;border-radius:25px;padding:12px;position:relative;overflow:hidden}.children{display:flex;gap:14px;justify-content:space-evenly;align-items:end;padding-top:6px}.child{position:relative;width:44%;max-width:220px;min-width:0;display:flex;flex-direction:column;align-items:center}.face{width:82px;height:83px;border-radius:47%;background:#efc097;border:3px solid #825c45;position:relative;z-index:1}.face:before{content:'';position:absolute;top:-6px;left:9px;right:9px;height:22px;border-radius:20px 20px 9px 9px;background:#513a31}.face:after{content:'•   •';position:absolute;top:31px;left:18px;font-size:18px;white-space:pre}.shirt{width:115px;height:76px;max-width:92%;border-radius:55px 55px 0 0;background:var(--shirt);margin-top:-4px}.desk{height:82px;width:100%;background:#d7a779;border:3px solid #ac7c53;border-radius:18px;position:relative;display:flex;justify-content:center;align-items:center;gap:8px;transition:background .15s,border-color .15s}.desk.target{background:#e2d5a1;border-color:#237f5c;border-width:5px}.desk.full{background:#d8b68e}.tray{margin-top:18px;border-top:2px solid #e5d7c6;min-height:132px;display:flex;justify-content:center;align-items:center;gap:20px;position:relative}.cup{width:54px;height:64px;border:3px solid #2782a2;border-radius:9px 9px 17px 17px;background:#9bd7e9;position:relative;box-shadow:inset 0 -8px 0 #79c3da;display:block;flex-shrink:0}.cup:after{content:'';position:absolute;width:17px;height:29px;border:5px solid #2782a2;border-left:0;border-radius:0 14px 14px 0;right:-20px;top:10px}.cup.small{width:37px;height:44px;border-width:3px;box-shadow:none}.cup.small:after{width:12px;height:21px;border-width:3px;right:-14px;top:6px}.cup-button{background:transparent;border:3px solid transparent;border-radius:20px;min-width:92px;min-height:92px;display:grid;place-items:center;touch-action:none;user-select:none;-webkit-user-select:none}.cup-button:active,.cup-button.selected{background:#e4f5ed;border-color:#277657}.desk-button{border:0;background:transparent;min-width:75px;min-height:74px;display:grid;place-items:center;touch-action:none;user-select:none;-webkit-user-select:none}.cup-on-desk{touch-action:none;cursor:grab}.desk:focus-within{outline:3px solid #1e6b87}.desk.target{box-shadow:0 0 0 5px #b5e6d0}.age-choice{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto}.age-choice button{min-width:80px;min-height:70px;border-radius:18px;border:3px solid #236f54;background:white;color:#23443a;font-size:27px;font-weight:800}.age-choice button:focus-visible{outline:4px solid #176cb3}.progress{text-align:center;color:#496357;font-weight:700;margin:3px}.cup-button:focus-visible,.desk-button:focus-visible{outline:4px solid #176cb3}.children.many{gap:5px}.children.many .face{width:53px;height:56px}.children.many .face:after{top:19px;left:7px}.children.many .shirt{width:68px;height:55px}.children.many .desk{height:72px;gap:0;flex-wrap:wrap;align-content:center}.children.many .desk-button{min-width:45px;min-height:46px}.children.many .cup.small{width:27px;height:33px}.children.many .cup.small:after{width:9px;height:16px;right:-10px}.children.many .puppy{font-size:52px}.puppy{font-size:76px;line-height:1.1}.bowl{width:59px;height:35px;border-radius:7px 7px 30px 30px;background:#b7d8ee;border:4px solid #477f9f;box-shadow:inset 0 8px #dff4ff}.bowl.small{width:44px;height:27px;border-width:3px}.bowl:after{display:none}.cup-button .bowl{margin:12px}.ghost .bowl{margin:0}.desk .cup.small{pointer-events:none}.children.many .empty{display:none}.empty{width:47px;height:47px;border-radius:50%;border:3px dashed #ae8662}.ghost{position:fixed;z-index:1000;pointer-events:none;display:grid;place-items:center;width:94px;height:94px;transform:translate(-50%,-64%);filter:drop-shadow(0 8px 5px #0002)}.ghost .cup{transform:scale(.95)}.ghost{will-change:left,top,transform}.cup-button,.desk-button{cursor:grab}.cup-button:active,.desk-button:active{cursor:grabbing}.hand{position:fixed;z-index:1001;font-size:43px;pointer-events:none;transform:translate(-10%,0);filter:drop-shadow(0 2px 2px #0003)}.feedback{text-wrap:balance;text-align:center;min-height:50px;padding:10px 4px;font-size:20px;font-weight:650}.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:12px}.secondary{min-height:52px;padding:10px 14px;background:white;border:2px solid #c6b6a1;border-radius:15px}.learning-status{text-align:center;font-size:14px;color:#486458;min-height:20px}.hint{text-wrap:balance;text-align:center;color:#586a60;font-size:15px;min-height:20px}.helped{font-weight:650}.demo-label{font-size:14px;text-align:center;color:#587368}.done{text-align:center;padding:55px 8px}.done h2{font-size:35px}@media(max-width:410px){main{padding:8px}.playground{padding:8px}.children{gap:7px}.face{width:64px;height:66px}.face:after{top:21px;left:11px}.shirt{width:85px;height:67px}.desk{height:72px}.tray{min-height:112px}.cup-button{min-width:85px}.instruction{margin-top:15px}}@media(prefers-reduced-motion:reduce){.desk{transition:none}.ghost,.hand{animation:none!important}}
+/* Espacios de interacción legibles sin depender del color ni de instrucciones escritas */
+.playground{box-shadow:0 5px 20px #543b2210}.tray{background:#f5f7f2;border:2px dashed #b4c8ba;border-radius:22px;margin-top:18px;padding:12px 8px;min-height:132px}.cup-button{background:#fff;border-color:#c6dfd3;box-shadow:0 3px 0 #bdd5c7}.cup-button.selected{border-color:#176b50;box-shadow:0 0 0 4px #b4e4cd}.desk{box-shadow:0 5px 0 #9d6c49}.desk.target{outline:4px solid #237f5c;outline-offset:3px}.primary[hidden],.secondary[hidden]{display:none}.feedback{transition:opacity .15s}.feedback:empty{min-height:20px}.actions{margin-top:16px}.instruction{max-width:560px;margin-left:auto;margin-right:auto}.progress{letter-spacing:.02em}.stage-dots{display:flex;justify-content:center;gap:9px;margin:10px 0 3px}.stage-dot{width:12px;height:12px;border:2px solid #719386;border-radius:50%;background:white}.stage-dot.done{background:#277657;border-color:#277657}.stage-dot.current{width:26px;border-radius:10px;background:#e5b961;border-color:#8c672a}.listen-flash{outline:3px solid #e5b961!important;outline-offset:3px}.secondary[hidden]{display:none}.quiet-note{text-align:center;font-size:14px;color:#486458;margin:5px 0 0}@media(max-width:410px){.tray{padding:8px 3px}.children.many .desk-button{min-width:40px}.actions{gap:8px}.secondary{min-height:54px}}
+
+/* Integrated mode: shell owns navigation; games own mathematical content. */
+html,body{width:100%;overflow-x:hidden}
+main{max-width:920px;padding:2px 12px 8px;min-height:0}
+main>header{display:none!important}
+.welcome,.end{padding:18px 8px!important}
+.instruction,h2#instruction{font-size:clamp(20px,3.4vw,28px)!important;min-height:0!important;margin:8px 0 10px!important;line-height:1.2}
+.progress{font-size:13px!important;margin:2px 0!important}
+.dots{gap:6px!important;margin:4px!important}
+.dot{width:9px!important;height:9px!important}
+.dot.now{width:20px!important}
+.scene,.playground{padding:10px!important;border-radius:20px!important}
+.groups{min-height:0!important;gap:10px!important}
+.group{min-height:clamp(108px,21dvh,158px)!important;padding:8px 5px!important;border-radius:17px!important}
+.tray{min-height:clamp(88px,16dvh,116px)!important;margin-top:10px!important;padding:8px!important;gap:8px!important}
+.item{min-width:58px!important;min-height:60px!important;border-radius:16px!important}
+.item.small{min-width:51px!important;min-height:53px!important}
+.toy{width:45px!important;height:45px!important}
+.toy.smalltoy{width:37px!important;height:37px!important}
+.feedback{min-height:28px!important;font-size:16px!important;padding:6px 0 0!important}
+.actions{margin-top:8px!important;gap:8px!important}
+.secondary{min-height:44px!important;padding:6px 12px!important;font-size:15px!important}
+.primary{min-height:48px!important;padding:7px 16px!important;font-size:18px!important}
+.hint{min-height:0!important;margin:5px 0!important;font-size:14px!important}
+.note{margin:4px 0!important;font-size:12px!important}
+.children{padding-top:2px!important;gap:6px!important}
+.face{width:clamp(48px,9dvh,70px)!important;height:clamp(49px,9dvh,70px)!important}
+.shirt{height:clamp(38px,7dvh,58px)!important;width:90px!important}
+.desk{height:clamp(54px,9dvh,73px)!important}
+.cup-button{min-width:65px!important;min-height:65px!important}
+.cup{width:43px!important;height:53px!important}
+@media(max-width:430px){main{padding:0 5px 6px!important}.scene,.playground{padding:7px!important}.group{min-height:108px!important}.groups{gap:7px!important}.item{min-width:51px!important;min-height:55px!important}.toy{width:39px!important;height:39px!important}.tray{min-height:88px!important}.actions{gap:5px!important}.secondary{padding:5px 8px!important;font-size:14px!important}.instruction,h2#instruction{font-size:21px!important}}
+@media(max-height:680px){.group{min-height:94px!important}.tray{min-height:75px!important}.note{display:none!important}}
+.integrated #repeat{display:none!important}</style></head><body><main><header><button id="home" class="round" aria-label="Volver al inicio">⌂</button><h1>Pequeño Mundo</h1><button id="listenTop" class="round" aria-label="Escuchar otra vez">🔊</button></header><section id="welcome" class="screen active welcome"><div class="hero" aria-hidden="true">🥛</div><h2>¡Vamos a repartir!</h2><p>Un vaso para cada niño. ¡Vamos a jugar!</p><button id="startGame" class="primary">▶ Jugar</button></section><section id="game" class="screen"><div id="progress" class="progress"></div><div id="stageDots" class="stage-dots" aria-hidden="true"></div><h2 id="instruction" class="instruction" aria-live="polite"></h2><div class="playground" id="playground"><div class="children" id="children"></div><div class="tray" id="tray" aria-label="Vasos disponibles"></div><div class="feedback" id="feedback" role="status" aria-live="polite"></div></div><div class="actions"><button id="repeat" class="secondary">🔊 Escuchar</button><button id="repeatFeedback" class="secondary" hidden>🔊 Mensaje</button><button id="again" class="secondary">↻ Repetir</button><button id="help" class="secondary">👆 Ayuda</button><button id="continue" class="primary" hidden>Seguir ▶</button></div><p id="hint" class="hint"></p><p class="quiet-note">Sin prisa. Puedes intentarlo otra vez.</p><p id="learningStatus" class="learning-status" aria-live="polite"></p></section><section id="end" class="screen done"><h2>¡Lo lograste!</h2><p>¡Repartiste uno para cada uno!</p><button id="restartAll" class="primary">Jugar otra vez</button></section></main><script>if(window.parent!==window)document.body.classList.add("integrated");
+'use strict';
+const $=id=>document.getElementById(id);let introMotion=null;let lastFeedbackVoice="";let stage=0,items=[],selected=null,drag=null,locked=false,complete=false,token=0,demo=null,voiceText='',instructionVoice='',settling=false,helpCount=0,misplacements=0,attempts=0,motorReturns=0,corrections=0,firstHintAt=null,stageStarted=0,stageResults=[],feedbackLevel=0,feedbackTimer=null,voiceSerial=0,wrongStateSeen=false,feedbackHistory=[];
+const steps=[{n:2,model:true},{n:3},{n:3,repair:true},{n:4,challenge:true},{n:3,transfer:true}];
+function show(name){document.querySelectorAll('.screen').forEach(x=>x.classList.toggle('active',x.id===name))}
+function speak(t,onEnd,onStart){
+ voiceText=t;const serial=++voiceSerial;let ended=false,started=false,watchdog=null,startWatchdog=null;const valid=()=>serial===voiceSerial;
+ const start=()=>{if(started||!valid())return;started=true;if(startWatchdog!==null)clearTimeout(startWatchdog);onStart?.()};
+ const finish=()=>{if(ended||!valid())return;ended=true;if(watchdog!==null)clearTimeout(watchdog);if(startWatchdog!==null)clearTimeout(startWatchdog);if(onStart)start();onEnd?.()};
+ if(!('speechSynthesis' in window)){start();if(onEnd)setTimeout(finish,650);return}
+ try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='es-ES';u.rate=.87;u.onstart=start;u.onend=finish;u.onerror=finish;speechSynthesis.speak(u);
+ if(onStart)startWatchdog=setTimeout(start,1100);
+ if(onEnd)watchdog=setTimeout(finish,4500);
+ }catch{start();if(onEnd)setTimeout(finish,650)}
+}
+function makeCup(small=false){const x=document.createElement('span');x.className=(steps[stage]?.transfer?'bowl':'cup')+(small?' small':'');x.setAttribute('aria-hidden','true');return x}
+function clearTransient(){voiceSerial++;try{speechSynthesis.cancel()}catch{}if(feedbackTimer)clearTimeout(feedbackTimer);feedbackTimer=null;lastFeedbackVoice='';$('repeatFeedback').hidden=true;token++;if(demo){demo.cancel();demo=null}if(introMotion){introMotion.cancel();introMotion=null}document.querySelectorAll('.ghost,.hand').forEach(x=>x.remove());if(drag?.source)drag.source.style.visibility='';drag=null;settling=false}
+function startStage(){clearTransient();let s=steps[stage];items=Array.from({length:s.n},(_,i)=>({id:i,at:null}));selected=null;locked=s.model;complete=false;helpCount=0;misplacements=0;attempts=0;motorReturns=0;corrections=0;firstHintAt=null;feedbackLevel=0;wrongStateSeen=false;feedbackHistory=[];stageStarted=Date.now();$('learningStatus').textContent='';if(s.repair){items[0].at=0;items[1].at=0;for(let j=2;j<s.n;j++)items[j].at=j;}$('continue').hidden=true;$('help').hidden=!!s.model;$('feedback').textContent='';$('hint').textContent='';$('progress').textContent='Actividad '+(stage+1)+' de '+steps.length; $('stageDots').innerHTML=steps.map((_,i)=>'<span class="stage-dot '+(i<stage?'done':i===stage?'current':'')+'"></span>').join('');show('game');$('instruction').textContent=s.model?'Mira cómo doy un vaso.':s.repair?'Haz que cada niño tenga un vaso.':s.transfer?'Cada perrito necesita agua. Dale un cuenco a cada uno.':s.challenge?'Reparte un vaso a cada niño, tú solo.':'Dale un vaso a cada niño.';instructionVoice=$('instruction').textContent;render();if(s.model){$('hint').textContent='Primero mira el ejemplo.';const local=token;showIntroGesture(local,()=>{if(local===token)speak('Mira cómo doy un vaso a este niño.',null,()=>{if(local===token)demonstrate(local)})})}else{showIntroGesture(token);speak($('instruction').textContent)}}
+function render(){const kids=$('children'),tray=$('tray');kids.replaceChildren();tray.replaceChildren();const s=steps[stage];kids.classList.toggle('many',s.n>=4);for(let i=0;i<s.n;i++){const c=document.createElement('div');c.className='child';const face=document.createElement('div');face.className=s.transfer?'puppy':'face';if(s.transfer){face.textContent='🐶';face.setAttribute('aria-hidden','true')}const shirt=document.createElement('div');shirt.className='shirt';shirt.style.setProperty('--shirt',['#77a6d0','#e3a85f','#ad91c6'][i%3]);if(s.transfer)shirt.style.display='none';const desk=document.createElement('div');desk.className='desk'+(items.some(x=>x.at===i)?' full':'');desk.dataset.dest=String(i);desk.setAttribute('aria-label',(s.transfer?'Lugar del perrito ':'Mesa del niño ')+(i+1));const there=items.filter(x=>x.at===i);if(there.length){there.forEach(it=>{const b=document.createElement('button');b.className='desk-button cup-on-desk';b.type='button';b.dataset.item=String(it.id);b.setAttribute('aria-label',(s.transfer?'Cuenco':'Vaso')+' del '+(s.transfer?'perrito ':'niño ')+(i+1)+'. Arrástralo o tócalo y elige otro lugar.');b.append(makeCup(true));installPointer(b,it.id);desk.append(b)})}else{const e=document.createElement('span');e.className='empty';e.setAttribute('aria-hidden','true');if(s.model)desk.append(e)}desk.addEventListener('click',e=>{if(locked||complete||drag||settling)return;if(e.target.closest('.desk-button'))return;if(selected!==null)place(selected,i)});c.append(face,shirt,desk);kids.append(c)}items.filter(x=>x.at===null).forEach(it=>{const b=document.createElement('button');b.className='cup-button'+(selected===it.id?' selected':'');b.type='button';b.dataset.item=String(it.id);b.setAttribute('aria-label',(s.transfer?'Cuenco':'Vaso')+' disponible. Puedes arrastrarlo o tocarlo.');b.setAttribute('aria-pressed',String(selected===it.id));b.append(makeCup());installPointer(b,it.id);tray.append(b)})}
+function installPointer(el,id){
+ el.addEventListener('pointerdown',e=>{
+  if(introMotion){introMotion.cancel();introMotion=null}
+  if(locked||complete||settling||drag||e.button!==0)return;
+  drag={id,x:e.clientX,y:e.clientY,moved:false,pointer:e.pointerId,origin:items[id].at,source:el};
+  el.setPointerCapture(e.pointerId);
+ });
+ el.addEventListener('pointermove',e=>{
+  if(!drag||drag.pointer!==e.pointerId)return;
+  const dist=Math.hypot(e.clientX-drag.x,e.clientY-drag.y);
+  if(!drag.moved&&dist>9){drag.moved=true;createGhost(drag.x,drag.y,drag.origin!==null);drag.source.style.visibility='hidden'}
+  if(drag.moved){moveGhost(e.clientX,e.clientY);highlight(e.clientX,e.clientY)}
+ });
+ el.addEventListener('pointerup',e=>{
+  if(!drag||drag.pointer!==e.pointerId)return;
+  const d=drag;drag=null;highlight(null,null);
+  if(d.moved){
+   moveGhost(e.clientX,e.clientY);
+   const target=findDestination(e.clientX,e.clientY);
+   const valid=target!==null;if(!valid)motorReturns++;
+   settleCup(d,valid?target:null,e.clientX,e.clientY);
+  }else{
+   selected=selected===d.id?null:d.id;
+   $('feedback').textContent=selected===null?'':'Ahora toca un lugar para dejar el '+objectName()+'.';
+   render();
+  }
+ });
+ el.addEventListener('pointercancel',e=>{
+  if(!drag||drag.pointer!==e.pointerId||drag.source!==el)return;
+  const d=drag;drag=null;highlight(null,null);
+  if(d.moved)settleCup(d,null,Number($('ghost')?.dataset.x||d.x),Number($('ghost')?.dataset.y||d.y));
+  else render();
+ });
+}
+function createGhost(x,y,small=false){removeGhost();const g=document.createElement('div');g.className='ghost';g.id='ghost';g.append(makeCup(small));document.body.append(g);moveGhost(x,y)}
+function moveGhost(x,y){const g=$('ghost');if(g){g.style.left=x+'px';g.style.top=y+'px';g.dataset.x=x;g.dataset.y=y}}
+function removeGhost(){$('ghost')?.remove()}
+function centerOf(el){const r=el.getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2}}
+function settleCup(d,target,x,y){
+ const g=$('ghost');if(!g){d.source.style.visibility='';return}
+ settling=true;
+ const dest=target===null?d.source:document.querySelector(`.desk[data-dest="${target}"]`);
+ const pos=centerOf(dest);
+ const sourceSmall=d.origin!==null,targetSmall=target!==null;
+ const initialScale=sourceSmall ? .69 : 1;
+ const finalScale=targetSmall ? .69 : 1;
+ // El vaso se desplaza sin desaparecer: al finalizar se sustituye por el elemento en su nueva posición.
+ const local=token;
+ const a=g.animate([{left:x+'px',top:y+'px',transform:`translate(-50%,-64%) scale(1)`},{left:pos.x+'px',top:pos.y+'px',transform:`translate(-50%,-64%) scale(${finalScale/initialScale})`}],{duration:260,easing:'cubic-bezier(.2,.75,.3,1)',fill:'forwards'});
+ a.onfinish=()=>{
+  if(local!==token)return;
+  if(target!==null)place(d.id,target);
+  else{$('feedback').textContent='El '+objectName()+' regresó. Puedes intentarlo otra vez.';render()}
+  removeGhost();settling=false;
+ };
+ a.oncancel=()=>{if(local===token){removeGhost();d.source.style.visibility='';settling=false}};
+}
+function findDestination(x,y){let closest=null,best=Infinity;document.querySelectorAll('.desk').forEach(el=>{const r=el.getBoundingClientRect(),pad=25;const cx=Math.max(r.left,Math.min(x,r.right)),cy=Math.max(r.top,Math.min(y,r.bottom));const dist=Math.hypot(x-cx,y-cy);if(x>=r.left-pad&&x<=r.right+pad&&y>=r.top-pad&&y<=r.bottom+pad&&dist<best){closest=Number(el.dataset.dest);best=dist}});return closest}
+function highlight(x,y){const n=x===null?null:findDestination(x,y);document.querySelectorAll('.desk').forEach(d=>d.classList.toggle('target',Number(d.dataset.dest)===n&&n!==null))}
+function sayFeedback(message,spoken=false){
+ $('feedback').textContent=message;
+ lastFeedbackVoice=message;
+ $('repeatFeedback').hidden=!message;
+ if(message)feedbackHistory.push(message);
+ if(feedbackTimer){clearTimeout(feedbackTimer);feedbackTimer=null}
+ if(spoken&&message){const local=token,expected=message;feedbackTimer=setTimeout(()=>{feedbackTimer=null;if(local===token&&lastFeedbackVoice===expected&&!locked)speak(expected)},320)}
+}
+function objectName(){return steps[stage].transfer?'cuenco':'vaso'}
+function recipientName(){return steps[stage].transfer?'perrito':'niño'}
+function eachOne(){return steps[stage].transfer?'Haz que cada perrito tenga un cuenco.':'Haz que cada niño tenga un vaso.'}
+function countsNow(){return Array.from({length:steps[stage].n},(_,i)=>items.filter(x=>x.at===i).length)}
+function storeResult(){
+ const record={activity:stage+1,attempts,helpCount,misplacements,corrections,motorReturns,wrongStateSeen,feedbackHistory:[...feedbackHistory],independent:!steps[stage].model&&helpCount===0&&misplacements===0&&corrections===0&&!wrongStateSeen,elapsedSeconds:Math.round((Date.now()-stageStarted)/1000)};
+ stageResults.push(record);
+ // Progreso exclusivamente local y anónimo, sin cuentas ni telemetría.
+ try{localStorage.setItem('pequeno-mundo-last-session',JSON.stringify(stageResults))}catch{}
+ $('learningStatus').textContent=steps[stage].model?'¡Completaste el ejemplo!':record.independent?'Lo repartiste sin pedir ayuda.':'¡Completaste el reparto!';
+}
+function place(id,dest){
+ if(locked||complete)return;
+ const before=items[id].at;
+ if(before===dest){selected=null;render();return}
+ attempts++;
+ const beforeCounts=countsNow();const beforeExcess=beforeCounts.filter(n=>n>1).reduce((sum,n)=>sum+n-1,0);
+ items[id].at=dest;
+ const counts=countsNow();const afterExcess=counts.filter(n=>n>1).reduce((sum,n)=>sum+n-1,0);
+ if(afterExcess>beforeExcess)misplacements++;
+ if(before!==null&&afterExcess<beforeExcess)corrections++;
+ selected=null;render();
+ if(items.every(x=>x.at!==null)&&counts.every(n=>n===1)){
+  complete=true;$('continue').hidden=false;$('help').hidden=true;
+  sayFeedback(steps[stage].transfer?'¡Ahora cada perrito tiene un cuenco!':'¡Ahora cada niño tiene un vaso!',true);
+  storeResult();return;
+ }
+ // Una respuesta incorrecta completa no debe parecer un éxito ni dejar al niño sin acción.
+ // El mensaje orienta la comprobación sin señalar a quién mover el objeto.
+ const allDelivered=items.every(x=>x.at!==null);
+ if(allDelivered&&afterExcess>0){
+  wrongStateSeen=true;
+  feedbackLevel++;
+  sayFeedback(feedbackLevel===1?'Todavía no. '+eachOne():'Puedes mover los '+(steps[stage].transfer?'cuencos':'vasos')+' que ya están en las mesas. '+eachOne(),true);
+ }else if(afterExcess>0){
+  wrongStateSeen=true;
+  sayFeedback('Sigue repartiendo. '+eachOne());
+ }else if(before!==null&&corrections>0){
+  sayFeedback('Moviste un '+objectName()+'. '+eachOne());
+ }else{
+  sayFeedback('Sigue repartiendo.');
+ }
+}
+// Señal de manipulabilidad, no de destino: el objeto se mueve unos píxeles y vuelve.
+// En corrección se elige un vaso de una mesa con uno (no el vaso sobrante),
+// para no revelar cuál debe cambiar de lugar.
+function showIntroGesture(local,onDone){
+ const s=steps[stage];
+ let source;
+ if(s.repair){
+   const counts=countsNow();const safe=counts.findIndex(n=>n===1);
+   source=document.querySelector(`.desk[data-dest="${safe}"] .desk-button`);
+ }else source=document.querySelector('.cup-button');
+ if(!source)return;
+ const rect=source.getBoundingClientRect();
+ const hand=document.createElement('div');hand.className='hand intro-hand';hand.textContent='👆';
+ hand.setAttribute('aria-hidden','true');
+ hand.style.left=(rect.left+rect.width*.60)+'px';hand.style.top=(rect.top+rect.height*.55)+'px';
+ document.body.append(hand);
+ const frames=[{transform:'translate(-10%,0)',opacity:0},{transform:'translate(-10%,0)',opacity:1,offset:.15},{transform:'translate(8px,-9px)',opacity:1,offset:.48},{transform:'translate(-10%,0)',opacity:1,offset:.78},{transform:'translate(-10%,0)',opacity:0}];
+ const opts={duration:1350,easing:'ease-in-out',fill:'forwards'};
+ const a=hand.animate(frames,opts);
+ const b=source.animate([{transform:'translate(0,0)'},{transform:'translate(13px,-7px)',offset:.48},{transform:'translate(0,0)'}],opts);
+ introMotion={cancel(){a.cancel();b.cancel();hand.remove()}};
+ a.onfinish=()=>{hand.remove();if(local===token){introMotion=null;onDone?.()}};
+}
+function demonstrate(local){if(local!==token)return;const source=document.querySelector('.cup-button'),target=document.querySelector('.desk[data-dest="0"]');if(!source||!target)return;const a=source.getBoundingClientRect(),b=target.getBoundingClientRect();const sx=a.left+a.width/2,sy=a.top+a.height/2,tx=b.left+b.width/2,ty=b.top+b.height/2;const g=document.createElement('div');g.className='ghost';g.append(makeCup());g.style.left=sx+'px';g.style.top=sy+'px';const hand=document.createElement('div');hand.className='hand';hand.textContent='👆';hand.style.left=sx+'px';hand.style.top=sy+'px';document.body.append(g,hand);source.style.visibility='hidden';const dx=tx-sx,dy=ty-sy;const opts={duration:1400,easing:'ease-in-out',fill:'forwards'};const frames=[{transform:'translate(-50%,-64%) translate(0,0)'},{transform:`translate(-50%,-64%) translate(${dx}px,${dy}px)`}];const gf=g.animate(frames,opts);hand.animate([{transform:'translate(-10%,0)'},{transform:`translate(${dx}px,${dy}px)`}],opts);demo=gf;gf.onfinish=()=>{if(local!==token)return;g.remove();hand.remove();items[0].at=0;locked=false;demo=null;selected=null;$('help').hidden=false;$('instruction').textContent='Ahora dale un vaso al otro niño.';instructionVoice=$('instruction').textContent;$('hint').textContent='Arrastra el vaso o toca el vaso y luego la mesa.';render();speak('Ahora tú. Dale un vaso al otro niño.')};}
+$('startGame').onclick=()=>{stageResults=[];stage=0;startStage()};$('restartAll').onclick=()=>{stageResults=[];stage=0;startStage()};$('again').onclick=startStage;
+$('help').onclick=()=>{
+ if(locked||complete||settling)return;
+ helpCount++;if(firstHintAt===null)firstHintAt=Date.now();
+ const s=steps[stage];const local=token;
+ if(helpCount===1){
+  const t=s.repair?'Mira cómo están los vasos. Haz que cada niño tenga uno.':s.transfer?'Mira a los perritos. Dale un cuenco a cada uno.':'Mira a los niños. Dale uno a cada uno.';
+  $('hint').textContent='Observa los objetos y a quién le toca uno.';speak(t);return;
+ }
+ // Enseñar el gesto sin mover objetos del estado y sin indicar un destinatario correcto.
+ const from=s.repair?document.querySelector('.desk[data-dest="2"] .desk-button'):(document.querySelector('.cup-button')||document.querySelector('.desk-button'));
+ if(!from){$('hint').textContent='Mira cómo quedó el reparto.';speak('Mira cómo quedó el reparto.');return}
+ const a=centerOf(from),hand=document.createElement('div');hand.className='hand';hand.textContent='👆';hand.style.left=a.x+'px';hand.style.top=a.y+'px';document.body.append(hand);
+ hand.animate([{transform:'translate(-10%,0)'},{transform:'translate(34px,-24px)'},{transform:'translate(-10%,0)'}],{duration:1300,easing:'ease-in-out'}).onfinish=()=>hand.remove();
+ setTimeout(()=>{if(local!==token)hand.remove()},1450);
+ $('hint').textContent='Puedes arrastrar o tocar el '+objectName()+' y después elegir un lugar.';
+ speak(s.repair?'Puedes mover un vaso que ya está en una mesa.':s.transfer?'Puedes arrastrar un cuenco o tocarlo y elegir un lugar.':'Puedes arrastrar un vaso o tocarlo y elegir un lugar.');
+};
+$('continue').onclick=()=>{if(!complete)return;if(stage===steps.length-1){clearTransient();show('end')}else{stage++;startStage()}};$('home').onclick=()=>{clearTransient();try{speechSynthesis.cancel()}catch{}show('welcome')};$('repeatFeedback').onclick=()=>{if(lastFeedbackVoice)speak(lastFeedbackVoice)};$('repeat').onclick=()=>{speak(instructionVoice||'Dale un vaso a cada niño.');$('repeat').classList.add('listen-flash');setTimeout(()=>$('repeat').classList.remove('listen-flash'),600)};$('listenTop').onclick=()=>speak(document.querySelector('#game.active')?instructionVoice:'Vamos a repartir.');if(window.parent===window&&'serviceWorker'in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+<script>
+(()=>{
+
+ window.addEventListener('message',e=>{
+  if(e.origin!==location.origin||e.source!==window.parent)return;
+  if(e.data?.type==='pm:stop-audio'){
+   try{speechSynthesis.cancel()}catch{}
+  }
+  if(e.data?.type==='pm:repeat-audio'){
+   const btn=document.getElementById('repeat')||document.getElementById('listen');
+   if(btn)btn.click();
+  }
+ });
+ const embedded=window.parent!==window;
+ if(!embedded)return;
+ const home=document.getElementById('home');
+ if(home){home.addEventListener('click',e=>{e.stopImmediatePropagation();e.preventDefault();try{speechSynthesis.cancel()}catch{};window.parent.postMessage({type:'pm:navigate-home'},location.origin)},true)}
+ const end=document.getElementById('end');
+ if(end){new MutationObserver(()=>{if(end.classList.contains('active'))window.parent.postMessage({type:'pm:completed',game:location.pathname.includes('clasificamos')?'clasificamos':'repartimos'},location.origin)}).observe(end,{attributes:true,attributeFilter:['class']})}
+})();
+</script>
+</body></html>
