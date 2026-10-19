@@ -1,27 +1,25 @@
 # Instrucciones para Codex — Pequeño Mundo
 
-## Propósito
-Desarrollar una PWA educativa en español para niños de 3 a 5 años. Gratuita y universal, sin anuncios, compras, suscripciones ni cuentas. Offline-first.
+Lee primero `README.md`, `docs/ESTADO.md`, `docs/DECISIONES.md`, `docs/ROADMAP.md` y `app/INFORME_AUDITORIA_TOTAL_V11.md`.
 
-## Base estable
-La última base funcional integrada es **V11** (tres juegos y pruebas). Los experimentos de arte V4/V5 y personajes individuales son prototipos y candidatos, no sustituyen la base funcional. **El código V11 todavía debe importarse desde el paquete de migración.**
+## Reglas no negociables
+- Proyecto educativo de matemáticas para niños de 3–5 años, gratuito, sin anuncios, cuentas, compras ni suscripciones; PWA offline-first.
+- Evaluar propuestas críticamente desde pedagogía infantil, diseño profesional de juegos y UX de prelectores. No afirmar eficacia pedagógica sin evidencia.
+- Mantener los tres juegos: Repartimos, Clasificamos y Comparamos; 5 actividades/etapas por juego como diseño objetivo (Comparamos implementa diez oportunidades según auditoría V11).
+- Conservar `app/` como línea base funcional V11. No reemplazarla por prototipos visuales sin integración y regresión completa.
+- Dirección artística B: videojuego educativo premium, personajes expresivos, ilustración cálida con volumen, objetos manipulables protagonistas.
+- **Cada asset nuevo se genera individualmente**, nunca láminas y recortes. Los PNG candidatos no se consideran arte aprobado para producción.
+- Personajes/mesas/vasos deben ser capas separadas; transparencia alfa real donde aplique; fondo sin objetos interactivos incrustados.
+- Botones y textos en HTML/CSS, no horneados en imágenes. Audio y demostraciones visuales para niños prelectores.
+- Entrada táctil: arrastre continuo y alternativa de dos toques. Errores motores no deben penalizarse; errores matemáticos permiten corregir.
+- La actividad 3 de Repartimos parte de tres niños con vasos 2–0–1; corregir hasta 1–1–1. No mostrar una pista que revele el movimiento correcto.
+- Validar todas las actividades, pantallas y estados; responsive 844×390, 390×844 y 1280×800 además de la matriz existente.
+- Distinguir resultados de tests automatizados, navegación HTTP, service worker/offline, audio audible y pruebas con niños: ninguno se infiere de otro.
+- No declarar 'listo para producción' sin validación real.
 
-## Pedagogía y UX
-- Tres juegos de cinco actividades: Repartimos (correspondencia uno a uno), Clasificamos (colores), Comparamos (cantidades).
-- Enseñar antes de evaluar. Audio e instrucciones accesibles para prelectores; demostraciones sin revelar respuestas.
-- No castigar errores motores. Admitir arrastre y alternativa de dos toques; permitir corrección de decisiones matemáticas.
-- Progreso local independiente por juego, sin requerir conexión.
-- Mantener una sola navegación y un único shell de aplicación, sin encabezados ni controles duplicados.
-- Verificar diseño horizontal 844×390, vertical 390×844 y escritorio 1280×800.
-
-## Arte
-Dirección B: videojuego educativo premium, personajes cartoon con volumen, iluminación cálida y objetos manipulables prioritarios. Generar CADA recurso de forma individual; NO generar hojas de assets para recortarlas y afirmar que son recursos independientes. Personajes, vaso, mesa y escenario como capas separadas. Exigir canal alfa genuino en sprites; el escenario es fondo. Botones preferiblemente HTML/CSS.
-
-## Repartimos actividad 3
-Tres niños y tres vasos inicialmente 2–0–1. El niño debe redistribuir un vaso del primero al segundo para obtener 1–1–1. Evitar pistas que revelen qué vaso mover. La interfaz debe permitir arrastrar, dos toques, comprobar y reiniciar.
-
-## Ingeniería
-- Auditar las 15 actividades, no solo una pantalla.
-- Ejecutar y documentar pruebas; no afirmar que se validó HTTP, offline, audio físico ni pruebas con niños sin haberlo hecho.
-- No perder funcionalidad al integrar arte.
-- Mantener clara separación entre versión estable, candidatos artísticos y trabajo pendiente.
+## Primera tarea recomendada
+1. Inspeccionar V11 y reproducir auditoría secuencial.
+2. Levantar entorno local HTTP y probar PWA/servicio worker con navegador real.
+3. Elaborar backlog de defectos por juego y resolución.
+4. Integrar una sola actividad visual con assets **individuales aprobados**, sin alterar el resto.
+5. Ejecutar regresión integral antes de extender el sistema visual.
