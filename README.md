@@ -1,18 +1,16 @@
-# Pequeño Mundo
+# Pequeño Mundo — transferencia a Codex
 
-Proyecto educativo gratuito, sin anuncios, sin cuentas y orientado a niños de 3 a 5 años. Aplicación web progresiva (PWA) en español, con prioridad offline y uso autónomo mediante audio.
+Juego educativo de matemáticas para edades 3–5, gratuito y offline-first. **Base integrada: V11; no está validada para publicación final.**
 
-## Juegos
-- **Repartimos**: correspondencia uno a uno, cinco actividades.
-- **Clasificamos**: clasificación por color, cinco actividades.
-- **Comparamos**: comparación de cantidades, cinco actividades.
+## Estructura
+- `app/`: copia íntegra de V11 (juegos, shell, PWA, scripts y auditoría).
+- `docs/`: decisiones, estado verificable, roadmap.
+- `AGENTS.md`: instrucciones prioritarias para Codex.
+- `assets/personajes-candidatos/`: personajes individuales experimentales, no aprobados ni integrados.
+- `prototipos/repartimos-arte-v4/`: prototipo de composición; sus recursos provienen de recortes y no son arte de producción.
 
-## Estado de migración
-**Pendiente de subir el código y los assets de la versión estable V11.** Este repositorio contiene inicialmente el contexto de continuidad. No debe interpretarse como una aplicación ejecutable hasta incorporar los archivos de `app/`.
+## Ejecutar
+Desde `app/`: `python3 -m http.server 8000` y abrir `http://localhost:8000` en un navegador. Para tests: instalar dependencias Playwright/Chromium y ejecutar `python3 auditoria_secuencial.py`; el entorno original bloqueaba navegación por URL, por lo que esos tests usaban `page.set_content`.
 
-La versión funcional base está preservada en el paquete local `pequeno-mundo-migracion-codex.zip` entregado en ChatGPT. Los prototipos artísticos posteriores son experimentales y NO sustituyen a V11.
-
-## Continuidad en Codex
-Leer primero `AGENTS.md` y `docs/DECISIONES.md`. Priorizar la recuperación exacta del ZIP de migración y su incorporación a este repositorio, conservando `app/`, `assets/`, `docs/` y `prototipos/`.
-
-No declarar producción ni validación infantil sin evidencia.
+## Continuidad
+Abrir el repositorio en Codex y pedir: «Lee AGENTS.md y docs/, inspecciona app/ como baseline V11, reproduce la auditoría y propón un plan de correcciones priorizadas sin cambiar aún las reglas pedagógicas».
