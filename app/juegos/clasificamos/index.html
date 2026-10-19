@@ -1,0 +1,124 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f3ea"><link rel="manifest" href="manifest.webmanifest"><title>Pequeño Mundo · Clasificamos</title><style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#244539;background:#f6f3ea}*{box-sizing:border-box}body{margin:0}button{font:inherit;cursor:pointer;touch-action:manipulation}button:focus-visible{outline:4px solid #176cb3;outline-offset:3px}main{max-width:760px;margin:auto;padding:12px 14px 36px}header{display:flex;align-items:center;justify-content:space-between;gap:12px}h1{font-size:20px}h2{text-align:center;font-size:clamp(23px,5vw,31px);min-height:70px;margin:18px 0 10px;line-height:1.2}.round{min-width:52px;min-height:52px;background:white;border:2px solid #b7c8bb;border-radius:16px}.screen{display:none}.screen.active{display:block}.welcome,.end{text-align:center;padding:65px 10px}.welcome h2,.end h2{font-size:36px}.hero{font-size:65px}.primary{border:0;border-radius:18px;background:#236f54;color:white;font-size:21px;font-weight:750;min-height:58px;padding:10px 26px}.secondary{background:white;border:2px solid #c5d4c8;border-radius:15px;min-height:52px;padding:10px 14px}.progress{text-align:center;font-weight:700;color:#4c6a5e;margin-top:8px}.dots{display:flex;justify-content:center;gap:9px;margin:9px}.dot{width:12px;height:12px;border-radius:50%;border:2px solid #779b8a;background:white}.dot.now{width:25px;border-radius:10px;background:#e8b957;border-color:#977332}.dot.past{background:#287c5a}.scene{border:2px solid #e2d5c4;border-radius:25px;background:#fffdf8;padding:16px 12px;overflow:hidden;position:relative}.groups{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-height:184px}.group{border:3px solid #c69c71;background:#f5e6d5;border-radius:20px;min-height:176px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;align-content:center;gap:6px;padding:12px 6px;position:relative}.group.target{outline:5px solid #2b8b67;outline-offset:2px}.group:before{content:' ';position:absolute;bottom:7px;left:15%;right:15%;border-bottom:4px solid #bd8d60;border-radius:100%}.group button{position:relative;z-index:1}.tray{border:2px dashed #b2cbb8;background:#f1f7f0;border-radius:20px;min-height:142px;margin-top:17px;padding:12px;display:flex;justify-content:center;align-items:center;gap:9px;flex-wrap:wrap}.item{min-width:68px;min-height:72px;border:3px solid transparent;background:#fff;border-radius:18px;display:grid;place-items:center;touch-action:none;user-select:none;-webkit-user-select:none}.item.selected{border-color:#237f5c;background:#ddf2e5}.item.small{min-width:61px;min-height:65px;background:#fffaf4}.toy{display:block;width:48px;height:48px;background:var(--toy);border:3px solid #314b58;box-shadow:inset -7px -7px 0 #0002,0 3px 0 #0002;pointer-events:none}.toy.ball{border-radius:50%}.toy.block{border-radius:9px}.toy.shirt{clip-path:polygon(20% 0,38% 0,42% 12%,58% 12%,62% 0,80% 0,100% 25%,80% 43%,80% 100%,20% 100%,20% 43%,0 25%)}.toy.sock{clip-path:polygon(17% 0,77% 0,77% 55%,100% 60%,100% 85%,76% 100%,17% 100%,0 82%,17% 62%)}.toy.smalltoy{width:42px;height:42px}.ghost{position:fixed;z-index:1000;pointer-events:none;transform:translate(-50%,-60%);filter:drop-shadow(0 6px 5px #0004);width:70px;height:70px;display:grid;place-items:center}.reference-focus{outline:5px solid #f2b847!important;outline-offset:5px;box-shadow:0 0 0 9px #f2b84755!important}.finger{position:fixed;z-index:1001;pointer-events:none;font-size:38px;filter:drop-shadow(0 2px 2px #0004)}.feedback{text-align:center;min-height:54px;font-size:19px;font-weight:650;padding:12px 0 0}.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:14px}.hint{text-align:center;min-height:28px;color:#486a5d}.note{text-align:center;color:#617a70;font-size:14px}.hidden{display:none!important}@media(max-width:400px){main{padding:8px}.scene{padding:10px 7px}.groups{gap:7px;min-height:160px}.group{min-height:160px;padding:8px 3px}.item{min-width:57px;min-height:62px}.item.small{min-width:48px;min-height:55px}.toy{width:40px;height:40px}.toy.smalltoy{width:33px;height:33px}.tray{gap:5px;min-height:120px;padding:7px}.secondary{padding:8px 10px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Integrated mode: shell owns navigation; games own mathematical content. */
+html,body{width:100%;overflow-x:hidden}
+main{max-width:920px;padding:2px 12px 8px;min-height:0}
+main>header{display:none!important}
+.welcome,.end{padding:18px 8px!important}
+.instruction,h2#instruction{font-size:clamp(20px,3.4vw,28px)!important;min-height:0!important;margin:8px 0 10px!important;line-height:1.2}
+.progress{font-size:13px!important;margin:2px 0!important}
+.dots{gap:6px!important;margin:4px!important}
+.dot{width:9px!important;height:9px!important}
+.dot.now{width:20px!important}
+.scene,.playground{padding:10px!important;border-radius:20px!important}
+.groups{min-height:0!important;gap:10px!important}
+.group{min-height:clamp(108px,21dvh,158px)!important;padding:8px 5px!important;border-radius:17px!important}
+.tray{min-height:clamp(88px,16dvh,116px)!important;margin-top:10px!important;padding:8px!important;gap:8px!important}
+.item{min-width:58px!important;min-height:60px!important;border-radius:16px!important}
+.item.small{min-width:51px!important;min-height:53px!important}
+.toy{width:45px!important;height:45px!important}
+.toy.smalltoy{width:37px!important;height:37px!important}
+.feedback{min-height:28px!important;font-size:16px!important;padding:6px 0 0!important}
+.actions{margin-top:8px!important;gap:8px!important}
+.secondary{min-height:44px!important;padding:6px 12px!important;font-size:15px!important}
+.primary{min-height:48px!important;padding:7px 16px!important;font-size:18px!important}
+.hint{min-height:0!important;margin:5px 0!important;font-size:14px!important}
+.note{margin:4px 0!important;font-size:12px!important}
+.children{padding-top:2px!important;gap:6px!important}
+.face{width:clamp(48px,9dvh,70px)!important;height:clamp(49px,9dvh,70px)!important}
+.shirt{height:clamp(38px,7dvh,58px)!important;width:90px!important}
+.desk{height:clamp(54px,9dvh,73px)!important}
+.cup-button{min-width:65px!important;min-height:65px!important}
+.cup{width:43px!important;height:53px!important}
+@media(max-width:430px){main{padding:0 5px 6px!important}.scene,.playground{padding:7px!important}.group{min-height:108px!important}.groups{gap:7px!important}.item{min-width:51px!important;min-height:55px!important}.toy{width:39px!important;height:39px!important}.tray{min-height:88px!important}.actions{gap:5px!important}.secondary{padding:5px 8px!important;font-size:14px!important}.instruction,h2#instruction{font-size:21px!important}}
+@media(max-height:680px){.group{min-height:94px!important}.tray{min-height:75px!important}.note{display:none!important}}
+.integrated #repeat{display:none!important}</style></head><body><main><header><button id="home" class="round" aria-label="Volver al inicio">⌂</button><h1>Pequeño Mundo</h1><button id="listen" class="round" aria-label="Escuchar instrucción">🔊</button></header><section id="welcome" class="screen active welcome"><div class="hero" aria-hidden="true">🔴 🔵</div><h2>¡Vamos a ordenar!</h2><p>Juntaremos las cosas del mismo color.</p><button id="start" class="primary">▶ Jugar</button></section><section id="game" class="screen"><div id="progress" class="progress"></div><div id="dots" class="dots" aria-hidden="true"></div><h2 id="instruction"></h2><div class="scene"><div id="groups" class="groups"><div class="group" data-group="0" aria-label="Primer grupo"></div><div class="group" data-group="1" aria-label="Segundo grupo"></div></div><div id="tray" class="tray" aria-label="Objetos por ordenar"></div><div id="feedback" class="feedback" role="status" aria-live="polite"></div></div><div class="actions"><button id="repeat" class="secondary">🔊 Escuchar</button><button id="help" class="secondary">👆 Ayuda</button><button id="reset" class="secondary">↻ Repetir</button><button id="next" class="primary hidden">Seguir ▶</button></div><p id="hint" class="hint"></p><p class="note">Sin prisa. Puedes cambiar las cosas de lugar.</p></section><section id="end" class="screen end"><div class="hero">🎈</div><h2>¡Terminaste!</h2><p>Has formado grupos del mismo color.</p><button id="restart" class="primary">Jugar otra vez</button></section></main><script>if(window.parent!==window)document.body.classList.add("integrated");
+'use strict';
+const $=id=>document.getElementById(id);
+const levels=[
+ {mode:'match',items:[['red','ball',0],['red','ball',null],['blue','ball',null]],prompt:'Pon aquí la pelota del mismo color.',spoken:'Mira esta pelota roja. Pon aquí otra pelota del mismo color.'},
+ {items:[['red','ball',null],['red','ball',null],['blue','ball',null],['blue','ball',null]],prompt:'Pon juntas las pelotas del mismo color.'},
+ {mode:'repair',items:[['red','ball',0],['red','ball',0],['blue','ball',0],['blue','ball',1]],prompt:'Haz que en cada grupo las pelotas sean del mismo color.'},
+ {items:[['red','ball',null],['blue','block',null],['red','block',null],['blue','ball',null],['red','ball',null],['blue','block',null]],prompt:'Pon juntos los juguetes del mismo color.'},
+ {items:[['red','shirt',null],['blue','sock',null],['red','sock',null],['blue','shirt',null]],prompt:'Pon juntas las prendas del mismo color.'}
+];
+const colors={red:'#e8504a',blue:'#377ad0'};
+let sessionStats={restarts:0,hints:0,errors:0,motorReturns:0},gestureTimer=null,sequenceTimer=null,sequencePhase='idle';let level=0,objects=[],selected=null,drag=null,done=false,locked=false,hints=0,errors=0,motorReturns=0,moves=0,token=0,intro=null,voiceText='',lastFeedback='',voiceId=0,stageStart=0,records=[],wrongComplete=false;
+function screen(s){document.querySelectorAll('.screen').forEach(x=>x.classList.toggle('active',x.id===s))}
+function say(t){voiceText=t;const serial=++voiceId;if(!('speechSynthesis'in window))return;try{speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang='es-ES';u.rate=.88;u.onerror=()=>{};if(serial===voiceId)speechSynthesis.speak(u)}catch{}}
+function stop(){token++;voiceId++;sequencePhase='idle';if(sequenceTimer){clearTimeout(sequenceTimer);sequenceTimer=null}document.querySelectorAll('.reference-focus').forEach(x=>x.classList.remove('reference-focus'));try{speechSynthesis.cancel()}catch{}if(intro){intro.cancel();intro=null}if(gestureTimer){clearTimeout(gestureTimer);gestureTimer=null}document.querySelectorAll('.finger,.ghost').forEach(x=>x.remove());if(drag?.source)drag.source.style.visibility='';drag=null;document.querySelectorAll('.group').forEach(x=>x.classList.remove('target'))}
+function startLevel(isReset=false){if(isReset)sessionStats.restarts++;stop();const l=levels[level];objects=l.items.map((a,i)=>({id:i,color:a[0],shape:a[1],at:a[2]}));selected=null;done=false;locked=false;hints=0;errors=0;motorReturns=0;moves=0;wrongComplete=false;lastFeedback='';stageStart=Date.now();$('next').classList.add('hidden');$('help').classList.remove('hidden');$('hint').textContent='';$('feedback').textContent='';$('instruction').textContent=l.prompt;$('progress').textContent=`Actividad ${level+1} de ${levels.length}`;$('dots').innerHTML=levels.map((_,i)=>`<span class="dot ${i<level?'past':i===level?'now':''}"></span>`).join('');screen('game');render();sequencePhase='waiting-gesture';gestureTimer=setTimeout(()=>{gestureTimer=null;introGesture(()=>beginInstruction(token))},450)}
+function toy(o,small=false){const s=document.createElement('span');s.className=`toy ${o.shape}${small?' smalltoy':''}`;s.style.setProperty('--toy',colors[o.color]);s.setAttribute('aria-hidden','true');return s}
+function render(){const tray=$('tray');tray.replaceChildren();document.querySelectorAll('.group').forEach((g,i)=>{g.replaceChildren();objects.filter(o=>o.at===i).forEach(o=>g.append(makeButton(o,true)))});objects.filter(o=>o.at===null).forEach(o=>tray.append(makeButton(o,false)));document.querySelectorAll('.group').forEach(g=>g.classList.toggle('target',selected!==null&&Number(g.dataset.group)!==objects[selected].at))}
+function makeButton(o,small){const b=document.createElement('button');b.type='button';b.className='item'+(small?' small':'')+(selected===o.id?' selected':'');b.dataset.id=String(o.id);b.setAttribute('aria-label',`${o.shape==='ball'?'Pelota':o.shape==='block'?'Bloque':o.shape==='shirt'?'Camiseta':'Calcetín'} ${o.color==='red'?'rojo':'azul'}. Arrastra o toca para mover.`);b.append(toy(o,small));bind(b,o.id);return b}
+function center(el){const r=el.getBoundingClientRect();return{x:r.left+r.width/2,y:r.top+r.height/2}}
+function introGesture(onComplete){const t=token;sequencePhase='gesture';const source=levels[level].mode==='repair'?document.querySelector('.group .item'):document.querySelector('.tray .item');if(!source){onComplete?.();return}const p=center(source);const finger=document.createElement('div');finger.className='finger';finger.textContent='👆';finger.style.left=(p.x+5)+'px';finger.style.top=(p.y+8)+'px';document.body.append(finger);const obj=source.querySelector('.toy');const a=obj.animate([{transform:'translateX(0)'},{transform:'translateX(18px)'},{transform:'translateX(0)'}],{duration:1450,delay:450,easing:'ease-in-out'});const f=finger.animate([{transform:'translate(0,0)',opacity:0},{transform:'translate(0,0)',opacity:1,offset:.2},{transform:'translate(18px,0)',opacity:1,offset:.65},{transform:'translate(0,0)',opacity:0}],{duration:1900,easing:'ease-in-out'});intro={cancel:()=>{a.cancel();f.cancel();finger.remove()}};f.onfinish=()=>{if(t===token){finger.remove();intro=null;onComplete?.()}}}
+function beginInstruction(t){
+ if(t!==token||drag||done)return;
+ sequencePhase='instruction';
+ const l=levels[level];
+ if(level===0){
+   const reference=document.querySelector('.group[data-group="0"] .item[data-id="0"]');
+   if(reference)reference.classList.add('reference-focus');
+   // The highlighted object is exactly the one described by the narration.
+   // No competing finger animation is allowed in this phase.
+   speakSequence('Mira esta pelota roja.',()=>{
+     if(t!==token)return;
+     reference?.classList.remove('reference-focus');
+     speakSequence('Busca otra pelota del mismo color y ponla aquí.',()=>{if(t===token)sequencePhase='ready'});
+   });
+ }else speakSequence(l.spoken||l.prompt,()=>{if(t===token)sequencePhase='ready'});
+}
+function speakSequence(message,finished){
+ voiceText=message;const serial=++voiceId;let settled=false;
+ const end=()=>{if(settled||serial!==voiceId)return;settled=true;if(sequenceTimer){clearTimeout(sequenceTimer);sequenceTimer=null}finished?.()};
+ if(!('speechSynthesis'in window)){sequenceTimer=setTimeout(end,1100);return}
+ try{
+   speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(message);u.lang='es-ES';u.rate=.88;
+   u.onend=end;u.onerror=end;speechSynthesis.speak(u);
+   sequenceTimer=setTimeout(end,Math.min(6500,Math.max(1600,message.length*95)));
+ }catch{sequenceTimer=setTimeout(end,1100)}
+}
+function interruptSequence(){
+ if(sequencePhase==='idle'||sequencePhase==='ready')return;
+ if(sequenceTimer){clearTimeout(sequenceTimer);sequenceTimer=null}
+ voiceId++;try{speechSynthesis.cancel()}catch{}
+ document.querySelectorAll('.reference-focus').forEach(x=>x.classList.remove('reference-focus'));
+ if(intro){intro.cancel();intro=null}
+ if(gestureTimer){clearTimeout(gestureTimer);gestureTimer=null}
+ sequencePhase='ready';
+}
+function bind(el,id){el.addEventListener('pointerdown',e=>{if(e.button!==0||locked||done||drag)return;interruptSequence();drag={id,pid:e.pointerId,x:e.clientX,y:e.clientY,moved:false,source:el,from:objects[id].at};el.setPointerCapture(e.pointerId)});el.addEventListener('pointermove',e=>{if(!drag||drag.pid!==e.pointerId)return;const d=drag;if(!d.moved&&Math.hypot(e.clientX-d.x,e.clientY-d.y)>9){d.moved=true;el.style.visibility='hidden';const g=document.createElement('div');g.className='ghost';g.id='ghost';g.append(toy(objects[d.id]));document.body.append(g)}if(d.moved){moveGhost(e.clientX,e.clientY);targetHighlight(e.clientX,e.clientY)}});el.addEventListener('pointerup',e=>{if(!drag||drag.pid!==e.pointerId)return;const d=drag;drag=null;targetHighlight(null,null);if(d.moved){moveGhost(e.clientX,e.clientY);const dest=hit(e.clientX,e.clientY);if(dest===null){const tray=$('tray').getBoundingClientRect();if(e.clientX>=tray.left&&e.clientX<=tray.right&&e.clientY>=tray.top&&e.clientY<=tray.bottom){moveObject(d.id,null);$('ghost')?.remove()}else{motorReturns++;sessionStats.motorReturns++;returnGhost(d)}}else{moveObject(d.id,dest);$('ghost')?.remove()}}else{selected=selected===d.id?null:d.id;render();if(selected!==null)$('feedback').textContent='Ahora toca un grupo para dejar el objeto.'}});el.addEventListener('pointercancel',e=>{if(!drag||drag.pid!==e.pointerId)return;const d=drag;drag=null;motorReturns++;sessionStats.motorReturns++;targetHighlight(null,null);returnGhost(d)})}
+function returnGhost(d){const g=$('ghost');if(!g){d.source.style.visibility='';return}const r=d.source.getBoundingClientRect();g.style.transition='left 260ms ease-out, top 260ms ease-out, opacity 260ms ease-out';g.style.left=(r.left+r.width/2)+'px';g.style.top=(r.top+r.height/2)+'px';g.style.opacity='.7';setTimeout(()=>{g.remove();if(d.source.isConnected)d.source.style.visibility=''},280)}
+function moveGhost(x,y){const g=$('ghost');if(g){g.style.left=x+'px';g.style.top=y+'px'}}
+function hit(x,y){for(const g of document.querySelectorAll('.group')){const r=g.getBoundingClientRect();if(x>=r.left-20&&x<=r.right+20&&y>=r.top-20&&y<=r.bottom+20)return Number(g.dataset.group)}return null}
+function targetHighlight(x,y){document.querySelectorAll('.group').forEach(g=>g.classList.toggle('target',x!==null&&hit(x,y)===Number(g.dataset.group)))}
+function evaluation(){const l=levels[level];if(l.mode==='match'){const red=objects.filter(o=>o.color==='red');return red.every(o=>o.at===0)&&objects.find(o=>o.color==='blue').at===null?'correct':objects.some(o=>o.color==='blue'&&o.at!==null)?'wrong':'incomplete'}if(objects.some(o=>o.at===null))return'incomplete';const groups=[0,1].map(i=>objects.filter(o=>o.at===i));return groups.every(g=>g.length>0&&new Set(g.map(o=>o.color)).size===1)&&groups[0][0].color!==groups[1][0].color?'correct':'wrong'}
+function feedback(t,audible=false){$('feedback').textContent=t;lastFeedback=t;if(audible)say(t)}
+function moveObject(id,dest){if(locked||done)return;const o=objects[id];if(o.at===dest){selected=null;render();return}o.at=dest;moves++;selected=null;render();const status=evaluation();if(status==='correct'){done=true;locked=true;const text=level===0?'¡Bien! Las dos pelotas rojas están juntas.':level===4?'¡Bien! Las prendas del mismo color están juntas.':'¡Bien! Los objetos del mismo color están juntos.';feedback(text,true);$('next').classList.remove('hidden');$('help').classList.add('hidden');records.push({activity:level+1,moves,hints,errors,motorReturns,restarts:sessionStats.restarts,totalHints:sessionStats.hints,totalErrors:sessionStats.errors,totalMotorReturns:sessionStats.motorReturns,independent:sessionStats.hints===0&&sessionStats.errors===0&&sessionStats.restarts===0&&level!==0,seconds:Math.round((Date.now()-stageStart)/1000)});try{localStorage.setItem('pequeno-mundo-clasificacion-last-session',JSON.stringify(records))}catch{}}else if(status==='wrong'){errors++;sessionStats.errors++;wrongComplete=true;feedback(level===0?'Esa pelota es diferente. Devuélvela y pon aquí la pelota roja.':'Todavía no. Mueve las cosas para que en cada grupo sean del mismo color.',true)}else if(wrongComplete){feedback(level===0?'Pon aquí la pelota roja.':'Puedes mover las cosas entre los grupos. Sigue intentando.',true)}else{feedback('Sigue ordenando.')}}
+function help(){if(done)return;hints++;sessionStats.hints++;if(hints%2===1){const t=level===0?'Mira la pelota roja que ya está aquí. Busca otra igual de roja.':'Mira los dos grupos. Pon juntas las cosas del mismo color.';$('hint').textContent=t;say(t)}else{const t=level===0?'Toca una pelota y después toca el espacio.':'Toca una cosa y después toca el grupo donde quieres ponerla. También puedes cambiarla de grupo.';$('hint').textContent=t;say(t);const source=level===0?document.querySelector('.tray .item'):document.querySelector('.group .item')||document.querySelector('.tray .item');if(source){const p=center(source),finger=document.createElement('div');finger.className='finger';finger.textContent='👆';finger.style.left=p.x+'px';finger.style.top=p.y+'px';document.body.append(finger);const obj=source.querySelector('.toy');const a=obj?.animate([{transform:'translateX(0)'},{transform:'translateX(16px)'},{transform:'translateX(0)'}],{duration:1200});finger.animate([{transform:'translateX(0)',opacity:0},{transform:'translateX(16px)',opacity:1},{transform:'translateX(0)',opacity:0}],{duration:1200}).onfinish=()=>{finger.remove();a?.cancel()}}}}
+$('tray').addEventListener('click',e=>{if(e.target.closest('.item')||selected===null||done||locked)return;moveObject(selected,null)});document.querySelectorAll('.group').forEach(g=>g.addEventListener('click',e=>{if(e.target.closest('.item')||selected===null||done||locked)return;moveObject(selected,Number(g.dataset.group))}));$('start').onclick=()=>{level=0;records=[];sessionStats={restarts:0,hints:0,errors:0,motorReturns:0};startLevel()};$('restart').onclick=()=>{level=0;records=[];sessionStats={restarts:0,hints:0,errors:0,motorReturns:0};startLevel()};$('next').onclick=()=>{if(!done)return;if(level===levels.length-1){stop();screen('end')}else{level++;sessionStats={restarts:0,hints:0,errors:0,motorReturns:0};startLevel()}};$('repeat').onclick=()=>{interruptSequence();say(lastFeedback||levels[level].spoken||levels[level].prompt)};$('listen').onclick=()=>{interruptSequence();say(lastFeedback||levels[level].spoken||levels[level].prompt)};$('help').onclick=()=>{interruptSequence();help()};$('reset').onclick=()=>startLevel(true);$('home').onclick=()=>{stop();screen('welcome')};
+if(window.parent===window&&"serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js").catch(()=>{});</script>
+<script>
+(()=>{
+
+ window.addEventListener('message',e=>{
+  if(e.origin!==location.origin||e.source!==window.parent)return;
+  if(e.data?.type==='pm:stop-audio'){
+   try{speechSynthesis.cancel()}catch{}
+  }
+  if(e.data?.type==='pm:repeat-audio'){
+   const btn=document.getElementById('repeat')||document.getElementById('listen');
+   if(btn)btn.click();
+  }
+ });
+ const embedded=window.parent!==window;
+ if(!embedded)return;
+ const home=document.getElementById('home');
+ if(home){home.addEventListener('click',e=>{e.stopImmediatePropagation();e.preventDefault();try{speechSynthesis.cancel()}catch{};window.parent.postMessage({type:'pm:navigate-home'},location.origin)},true)}
+ const end=document.getElementById('end');
+ if(end){new MutationObserver(()=>{if(end.classList.contains('active'))window.parent.postMessage({type:'pm:completed',game:location.pathname.includes('clasificamos')?'clasificamos':'repartimos'},location.origin)}).observe(end,{attributes:true,attributeFilter:['class']})}
+})();
+</script>
+</body></html>
