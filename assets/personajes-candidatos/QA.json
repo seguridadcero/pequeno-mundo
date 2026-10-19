@@ -1,0 +1,35 @@
+{
+  "nino_azul.png": {
+    "size": [
+      878,
+      960
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_pixels": 257351
+  },
+  "nina_amarilla.png": {
+    "size": [
+      960,
+      689
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_pixels": 409180
+  },
+  "nino_verde.png": {
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "transparent_pixels": 921681
+  }
+}
