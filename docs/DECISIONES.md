@@ -1,12 +1,26 @@
-# Decisiones y estado
+# Decisiones del producto
 
-1. Producto: Pequeño Mundo, PWA educativa española, gratuita, sin publicidad ni cuentas, edades 3–5.
-2. Tres juegos: Repartimos, Clasificamos, Comparamos, cinco actividades cada uno.
-3. V11 es la base funcional integrada que se debe preservar.
-4. Dirección visual B aprobada: premium, personajes cartoon, objetos interactivos protagonistas.
-5. Prohibido fabricar sprites recortando una lámina de assets y presentarlos como generados individualmente.
-6. Personajes individuales candidatos: niño azul, niña amarilla, niño verde. Pendiente evaluar coherencia y bordes.
-7. Repartimos actividad 3: estado inicial 2–0–1; solución 1–1–1; no revelar la respuesta mediante pistas.
-8. Responsive: 844×390, 390×844, 1280×800.
-9. Soporte de audio, aprendizaje prelector, drag y dos toques, corrección no punitiva.
-10. La migración del código/recursos al repositorio está pendiente hasta poder transferir los archivos binarios y HTML reales.
+## Público y modelo
+- Niños 3–5 años, prelectores; uso autónomo razonable con instrucciones habladas y demostraciones.
+- Universalmente gratuito, sin anuncios, cuentas, compras, suscripciones ni contenido de pago.
+- PWA offline-first.
+
+## Diseño pedagógico
+- Enseñar, no limitarse a examinar; secuencias progresivas con feedback comprensible.
+- Tres juegos: Repartimos (correspondencia uno a uno), Clasificamos (clasificación por color), Comparamos (comparación de cantidades).
+- Cinco etapas por juego como diseño objetivo; verificar correspondencia con código real.
+- Evitar pistas que den directamente la respuesta. En Repartimos 3, configuración 2–0–1.
+- Voz antes de acción y demostración neutral de gesto; no revelar solución mediante el dedo guía.
+- Errores motores se distinguen de errores conceptuales; permitir corrección sin penalización.
+
+## Experiencia e interfaz
+- Una sola navegación/shell, sin encabezados y controles de audio duplicados entre juegos.
+- Arrastrar y alternativa de dos toques; cancelación con retorno animado.
+- Responsive con diseño de referencia horizontal 844×390 y soporte vertical 390×844.
+- Objetos manipulables visualmente prioritarios, tamaños táctiles adecuados.
+
+## Arte
+- Dirección B: ilustración de videojuego educativo premium, personajes cálidos expresivos, sombreado con volumen, aula discreta.
+- Assets individuales con alfa real, jamás láminas recortadas como origen de producción.
+- Reutilizar un vaso para múltiples instancias; botones nativos HTML/CSS.
+- Diferenciar referencias visuales, candidatos y arte final aprobado.
