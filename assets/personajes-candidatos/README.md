@@ -1,0 +1,1 @@
+Tres personajes generados individualmente. nino_verde.png es una generacion independiente, no recortada de una lamina. Los otros dos proceden del kit individual anterior. Los tres contienen transparencia alfa. Faltan vaso, mesa y fondo generados individualmente; no es un kit completo ni se ha integrado en la app. Revisar consistencia de escala y contornos antes de produccion.
